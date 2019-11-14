@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :restaurants
   resources :vouchers
   get 'static_pages/home'
 
