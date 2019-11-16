@@ -6,7 +6,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.0]
       t.string :openinghours
       t.string :decsription
       t.string :pricerange
-
+      t.string :website
       t.timestamps
     end
   end

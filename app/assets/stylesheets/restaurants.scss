@@ -1,3 +1,14 @@
 // Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ .headSec {
+    background: url("/assets/Site/foodimage1.jpg");
+     background-repeat: no-repeat;
+     background-size:100% 100%;
+    min-height:10px;
+    background-color: #b3e0ff;
+    width: 100%;
+    margin-bottom:10px;
+    overflow: auto;
+    
+}
