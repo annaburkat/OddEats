@@ -7,14 +7,14 @@
     background-image: url('couple.svg');
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    min-height: 70vh;
     margin: 30px auto;
     
     &__title {
         padding:10px;
         color: #17108c;
         text-align: center;
-        font-size: 7rem;
+        font-size: 4rem;
     }
     
     &__subtitle {
@@ -24,26 +24,39 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+  .header-home {
+    min-height: 90vh;
+    margin: 30px auto;
+    
+        &__title {
+            padding:10px;
+            color: #17108c;
+            text-align: center;
+            font-size: 6rem;
+        }
+    }
+}
+
 
 
 .home-intro {
     margin: 30px auto;
     padding: 20px;
-    max-width: 70%;
     padding: 20px;
     text-align:center;
     
     &__title {
         color: #17108c;
         text-align: center;
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: 20px;
     }
     
     &__text {
         line-height: 1.5;
         color:#141823;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
