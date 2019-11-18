@@ -1,7 +1,5 @@
 # OddEats
 
-## Install
-
 ### Clone the repository
 
 ```shell
