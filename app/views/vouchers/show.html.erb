@@ -1,3 +1,4 @@
+<% provide(:title, @voucher.name) %>
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -15,7 +16,8 @@
           
           <p>
             <strong>Price:</strong>
-            <%= @voucher.price %>
+           <%= number_to_currency(@voucher.price, :unit => "€") %>
+
           </p>
           
           <%= link_to 'Edit', edit_voucher_path(@voucher) %> |

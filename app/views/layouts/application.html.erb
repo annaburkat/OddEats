@@ -41,19 +41,6 @@
             <%=link_to "Contact", contact_path, { :class=>"nav-link" }%>
           </li>
         </ul>
-         <% if signed_in? %>
-            <span class="nav-item login">Signed in as: <%= current_user.email %> </span>
-            <%= button_to 'Sign out', sign_out_path, method: :delete %>
-          <% else %>
-            <%= link_to 'Sign in', sign_in_path %>
-          <% end %>
-
-          <div id="flash">
-            <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-          </div>
-
-        <% end %>
       </div>
     </nav>
 
@@ -62,32 +49,32 @@
     <footer class="footer">
       <div class="container-fluid">
         <div class="row">
-        <div class="col col-md-4">
-          <%= link_to root_path, { :class=>"navbar-brand" }  do %>
-            <%= image_tag('logo.png', :class => "logo-footer") %>
-          <% end %>
-        </div>        
-        <div class="col col-md-4">
-          <ul class="menu-footer">
-            <li class="nav-item">
-              <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
-            </li>
-            <li class="nav-item">
-              <%=link_to "Restaurants", restaurants_path, { :class=>"nav-link" } %>
-            </li>
-          </ul>
-        </div>        
-        <div class="col col-md-4">
-          <ul class="menu-footer">
-            <li class="nav-item">
-              <%=link_to "About", about_path, { :class=>"nav-link" } %>
-            </li>
-            <li class="nav-item">
-              <%=link_to "Contact", contact_path, { :class=>"nav-link" }%>
-            </li>
-          </ul>
+          <div class="col col-md-4">
+            <%= link_to root_path, { :class=>"navbar-brand" }  do %>
+              <%= image_tag('logo.png', :class => "logo-footer") %>
+            <% end %>
+          </div>        
+          <div class="col col-md-4">
+            <ul class="menu-footer">
+              <li class="nav-item">
+                <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
+              </li>
+              <li class="nav-item">
+                <%=link_to "Restaurants", restaurants_path, { :class=>"nav-link" } %>
+              </li>
+            </ul>
+          </div>        
+          <div class="col col-md-4">
+            <ul class="menu-footer">
+              <li class="nav-item">
+                <%=link_to "About", about_path, { :class=>"nav-link" } %>
+              </li>
+              <li class="nav-item">
+                <%=link_to "Contact", contact_path, { :class=>"nav-link" }%>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>  
     </footer>
   </body>
