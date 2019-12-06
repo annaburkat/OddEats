@@ -16,4 +16,9 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get hotspot" do
+    get static_pages_hotspot_url
+    assert_response :success
+  end
+
 end

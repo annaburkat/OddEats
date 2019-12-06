@@ -1,12 +1,9 @@
 <% provide(:title, "Edit Voucher") %>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1>Editing Voucher</h1>
-            <%= render 'form', voucher: @voucher %>
-            <%= link_to 'Show', @voucher %> |
-            <%= link_to 'Back', vouchers_path %>
-    </div>
-  </div>
+<h1>Editing Voucher</h1>
+<div class="voucers">
+    <%= render 'form', voucher: @voucher %>
+    
+    <%= link_to 'Show', @voucher %> |
+    <%= link_to 'Back', vouchers_path %>
 </div>

@@ -7,4 +7,13 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def hotspot
+  end
+  
+  def createOrder
+   @orders = Order.all
+  end
+
+  
 end

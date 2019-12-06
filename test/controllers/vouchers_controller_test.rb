@@ -17,7 +17,7 @@ class VouchersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create voucher" do
     assert_difference('Voucher.count') do
-      post vouchers_url, params: { voucher: { description: @voucher.description, name: @voucher.name, price: @voucher.price } }
+      post vouchers_url, params: { voucher: { category: @voucher.category, description: @voucher.description, image_url: @voucher.image_url, price: @voucher.price, title: @voucher.title } }
     end
 
     assert_redirected_to voucher_url(Voucher.last)
@@ -34,7 +34,7 @@ class VouchersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update voucher" do
-    patch voucher_url(@voucher), params: { voucher: { description: @voucher.description, name: @voucher.name, price: @voucher.price } }
+    patch voucher_url(@voucher), params: { voucher: { category: @voucher.category, description: @voucher.description, image_url: @voucher.image_url, price: @voucher.price, title: @voucher.title } }
     assert_redirected_to voucher_url(@voucher)
   end
 

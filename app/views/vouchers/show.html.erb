@@ -1,13 +1,10 @@
-<% provide(:title, @voucher.name) %>
-<div class="container">
+<% provide(:title, @voucher.title) %>
+<div class="container vouchers">
     <div class="row">
         <div class="col-12">
           <p id="notice"><%= notice %></p>
           
-          <p>
-            <strong>Name:</strong>
-            <%= @voucher.name %>
-          </p>
+          <h1> <%= @voucher.title %></h1>
           
           <p>
             <strong>Description:</strong>
@@ -17,8 +14,9 @@
           <p>
             <strong>Price:</strong>
            <%= number_to_currency(@voucher.price, :unit => "€") %>
-
           </p>
+          
+          <a href="/cart/<%= @voucher.id %>" class="button">Add To Cart</a>
           
           <%= link_to 'Edit', edit_voucher_path(@voucher) %> |
           <%= link_to 'Back', vouchers_path %>

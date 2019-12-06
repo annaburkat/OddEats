@@ -1,78 +1,134 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %>  | OddEats</title>
+    <title><%= yield(:title) %> | OddEats</title>
     <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-         <!-- CSS Reset -->
-    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <!-- CSS Reset -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <!-- Milligram CSS minified -->
     <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
-
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/6eba2fe580.js" crossorigin="anonymous"></script>
+    <!--google font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <%= link_to root_path, { :class=>"navbar-brand" }  do %>
-        <%= image_tag('logo.png', :class => "logo") %>
-      <% end %>
-       
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <%= link_to root_path, { :class=>"navbar-brand header__brand" }  do %>
+          <%= image_tag('logo.png', :class => "header__logo") %>
+        <% end %>
+         
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav header__navbar-nav mr-auto">
+            <div class="header__navbar-left">
+              <li class="nav-item">
+                <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+              </li>
+              <li class="nav-item">
+                <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link header__link" } %>
+              </li>
+              <li class="nav-item">
+                <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+              </li>
+              <li class="nav-item">
+                <%=link_to "Contact", contact_path, { :class=>"nav-link header__link" }%>
+              </li>  
+            </div>
+            
+            <div class="header__navbar-right">
+              <% if user_signed_in? %>
+                <li class="nav-item">
+                   <%= link_to "View Cart", "/cart", { :class=>"nav-link" }%>
+                </li>
+              <% end %>
+              <% if user_signed_in? %>
+                <li><a class="nav-link" href="#">Hi <%= current_user.email %></a></li>
+                <li><%= link_to 'Edit Profile', edit_user_registration_path, { :class=>"nav-link" } %></li>
+                <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete  %></li>
+              <% else %>
+                <li><%= link_to 'Register', new_user_registration_path, { :class=>"nav-link" } %></li> 
+                <li><%= link_to 'Sign in', new_user_session_path, { :class=>"nav-link" } %></li>
+              <% end %>
+              
+              <% if session[:login] == 1 %> 
+                <li><%= link_to "Admin Logout", logout_path, { :class=>"nav-link" } %></li>
+              <% else %>
+                <li><%= link_to "Admin Login", login_path, { :class=>"nav-link" } %></li>
+              <% end %>
+            </div>
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <%=link_to "Restaurants", restaurants_path, { :class=>"nav-link" } %>
-          </li>
-          <li class="nav-item">
-            <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
-          </li>
-          <li class="nav-item">
-            <%=link_to "About", about_path, { :class=>"nav-link" } %>
-          </li>
-          <li class="nav-item">
-            <%=link_to "Contact", contact_path, { :class=>"nav-link" }%>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <%= yield %>
-
+    <div class="container">
+      <%= yield %>
+    </div>
+    
     <footer class="footer">
       <div class="container-fluid">
         <div class="row">
-          <div class="col col-md-4">
-            <%= link_to root_path, { :class=>"navbar-brand" }  do %>
-              <%= image_tag('logo.png', :class => "logo-footer") %>
+          <div class="col-12 col-md-3">
+            <%= link_to root_path, { :class=>"navbar-brand footer__brand" }  do %>
+              <%= image_tag('logo.png', :class => "footer__logo") %>
             <% end %>
           </div>        
-          <div class="col col-md-4">
-            <ul class="menu-footer">
-              <li class="nav-item">
+          <div class="col-12 col-md-3">
+            <ul class="footer__menu">
+               <li class="nav-item">
                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
               </li>
               <li class="nav-item">
-                <%=link_to "Restaurants", restaurants_path, { :class=>"nav-link" } %>
+                <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link" } %>
               </li>
-            </ul>
-          </div>        
-          <div class="col col-md-4">
-            <ul class="menu-footer">
               <li class="nav-item">
                 <%=link_to "About", about_path, { :class=>"nav-link" } %>
               </li>
               <li class="nav-item">
                 <%=link_to "Contact", contact_path, { :class=>"nav-link" }%>
-              </li>
+              </li>  
             </ul>
+          </div>        
+          <div class="col-12 col-md-3">
+            <ul class="footer__menu">
+              <% if user_signed_in? %>
+                <li class="nav-item">
+                   <%= link_to "Cart", "/cart", { :class=>"nav-link" }%>
+                </li>
+              <% end %>
+              <% if user_signed_in? %>
+                <li><a class="nav-link" href="#">Hi <%= current_user.email %></a></li>
+                <li><%= link_to 'Edit Profile', edit_user_registration_path, { :class=>"nav-link" } %></li>
+                <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete  %></li>
+              <% else %>
+                <li><%= link_to 'Register', new_user_registration_path, { :class=>"nav-link" } %></li> 
+                <li><%= link_to 'Sign in', new_user_session_path, { :class=>"nav-link" } %></li>
+              <% end %>
+              
+              <% if session[:login] == 1 %> 
+                <li><%= link_to "Admin Logout", logout_path, { :class=>"nav-link" } %></li>
+              <% else %>
+                <li><%= link_to "Admin Login", login_path, { :class=>"nav-link" } %></li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul class="footer__menu footer__menu--horizontal">
+               <i class="footer__icon fab fa-facebook-f"></i>
+               <i class="footer__icon fab fa-instagram"></i>
+               <i class="footer__icon fab fa-twitter"></i>
+            </ul>
+            <p class="footer__subtext">Follow us on social media <br/>and get extra vouchers!</p>
           </div>
         </div>
       </div>  
