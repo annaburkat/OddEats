@@ -10,4 +10,8 @@ class OrderitemsController < ApplicationController
 
   def edit
   end
+  
+  @orderitems=Orderitem.all
+  @orderitems=Orderitem.where(order_id:params[:id])
+  
 end

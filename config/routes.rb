@@ -18,9 +18,9 @@ Rails.application.routes.draw do
   end
   
   get '/checkout' => 'cart#createOrder'
-
+  
   get 'cart/index'
-
+  
   resources :vouchers
 
   get '/cart/:id', to: 'cart#add' # the , to: is the same as th =>
@@ -42,6 +42,8 @@ Rails.application.routes.draw do
   get '/logout', to: 'user#logout'
   
   get '/about' => 'static_pages#about'
+  
+  get '/paid/:id', to: 'static_pages#paid'
 
   get '/contact' => 'static_pages#contact'
 
