@@ -35,6 +35,8 @@ Rails.application.routes.draw do
   
   get '/cart/increase/:id', to: 'cart#increase'
   
+  post '/search' => 'vouchers#search'
+  
   root 'static_pages#home'
 
   get '/login', to: 'user#login' 

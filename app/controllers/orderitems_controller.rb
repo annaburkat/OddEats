@@ -3,6 +3,8 @@ class OrderitemsController < ApplicationController
   end
 
   def show
+    @user=User.find(current_user.id)
+    @orders=user.orders.all
   end
 
   def new
@@ -10,8 +12,5 @@ class OrderitemsController < ApplicationController
 
   def edit
   end
-  
-  @orderitems=Orderitem.all
-  @orderitems=Orderitem.where(order_id:params[:id])
   
 end

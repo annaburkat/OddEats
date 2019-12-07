@@ -42,8 +42,9 @@
               <li class="nav-item">
                 <%=link_to "Contact", contact_path, { :class=>"nav-link header__link" }%>
               </li>  
-              <li>
+              <li class="nav-item">
                 <%= link_to "View Orders", orders_path %>
+                
                 </li>
             </div>
             
@@ -68,6 +69,12 @@
                 <li><%= link_to "Admin Login", login_path, { :class=>"nav-link" } %></li>
               <% end %>
             </div>
+            
+            <%= form_tag("/search", :method => "post") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search") %>
+            <% end %>
             
           </ul>
         </div>

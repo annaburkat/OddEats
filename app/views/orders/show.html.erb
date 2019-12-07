@@ -42,6 +42,8 @@
         
   </tr>
   </table>
+  
+  <% if @order.user.email == @user.email %>
 
 <h2>Order Items</h2>
 
@@ -55,14 +57,11 @@
        
       </tr>
     <% end %>
-      
-<% if @order.user.email == @user.email %>
-<% else %>
-   
-<h1>You did not place this order</h1>
-<% end %>
  
    <tr></tr>
    </table>
-      
+      <% else %>
+      <h1>You did not place this order</h1>
+<% end %>
+
    </div>
