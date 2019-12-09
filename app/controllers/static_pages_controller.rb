@@ -29,5 +29,5 @@ class StaticPagesController < ApplicationController
   @order.update_attribute(:status, "Paid by User: #{current_user.email}")
   #"Paid by User:#{current_user.id} #{current_user.name} #{current_user.surname}")
   end
-  
+
 end

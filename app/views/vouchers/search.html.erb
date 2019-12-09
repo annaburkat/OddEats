@@ -1,0 +1,31 @@
+<% provide(:title, "Search") %>
+
+<table class="catalog">
+  <% @vouchers.each do |voucher| %>
+      <tr>
+        <td>
+          <div class="image">
+            <%= link_to (image_tag voucher.image_url, :style => "height:100px"), voucher %>
+          </div>
+          <div class="title">
+            <%= link_to voucher.title, voucher %>
+          </div>
+          <div class="description">
+            <%= voucher.description %>
+          </div>  
+          <div class="price">
+             <%= number_to_currency(voucher.price, :unit => "€") %>
+          </div>
+          <div class="links">
+            <% if user_signed_in? %>
+              <%= link_to 'Edit', edit_voucher_path(voucher) %>
+              <%= link_to 'Destroy', voucher, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%else%>
+            
+              <a href="/cart/<%= voucher.id %>">Add to Cart</a>
+            <%end%>  
+        </div>
+        </td>
+      </tr>
+    <% end %>
+</table>

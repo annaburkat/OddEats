@@ -1,5 +1,10 @@
 class VouchersController < ApplicationController
   before_action :set_voucher, only: [:show, :edit, :update, :destroy]
+  
+  def search
+     st = "%#{params[:q]}%"
+     @vouchers = Voucher.where("title like ?", st)
+  end
 
   # GET /vouchers
   # GET /vouchers.json
