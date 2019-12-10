@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
+  resources :restaurants
   resources :orders
+  
   get 'orderitems/index'
 
   get 'orderitems/show'
@@ -52,6 +54,8 @@ Rails.application.routes.draw do
   get '/hotspot' => 'static_pages#hotspot'
   
   root :to => 'site#home'
+  
+  
   
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
