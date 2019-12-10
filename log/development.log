@@ -14372,3 +14372,1799 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_in" for 80.233.37.24 at 2019-12-10 19:20:53 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 442ms (Views: 422.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 80.233.37.24 at 2019-12-10 19:20:55 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8MnUBn0VFk4zsQdNQ6CBieKjkjNdk0x7S/dBdSovfomx7ICkAZX4oUT64s8+GWu1Oz4OdEHjmuvax1F9HPOP6Q==", "user"=>{"email"=>"carlalew94@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "carlalew94@gmail.com"], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 170ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:20:56 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:20:59 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (13.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 94ms (Views: 91.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cart/1" for 80.233.37.24 at 2019-12-10 19:21:01 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 19:21:01 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:21:03 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:27:29 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:27:35 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart/1" for 80.233.37.24 at 2019-12-10 19:30:59 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 19:30:59 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:31:02 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:31:04 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:31:06 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:33:08 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:35:01 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:35:22 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:35:25 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (213.5ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_cart' for #<#<Class:0x00007fa515eaa170>:0x00007fa510447e08>
+Did you mean?  current_user):
+    26:             <td><a href="/cart/increase/<%= item.id %>">Increase</a></td>
+    27:         </tr>
+    28:         <% total += quantity * item.price %>
+    29:         <% current_cart.items.sum('quantity') %>
+    30:         <% end %>
+    31:         <tr>
+    32:             Grand Total: <%= number_to_currency(total, :unit => "€") %>
+  
+app/views/cart/index.html.erb:29:in `block in _app_views_cart_index_html_erb__348992703090808831_70173459604380'
+app/views/cart/index.html.erb:12:in `each'
+app/views/cart/index.html.erb:12:in `_app_views_cart_index_html_erb__348992703090808831_70173459604380'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.7ms)
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:35:35 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 105ms (Views: 102.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:36:06 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 123ms (Views: 107.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:36:12 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 79ms (Views: 65.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:36:15 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:37:16 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart/decrease/1" for 80.233.37.24 at 2019-12-10 19:37:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'decrease' could not be found for CartController):
+  
+actionpack (5.0.7.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.7.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.2) lib/action_dispatch/routing/route_set.rb:727:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started GET "/cart/decrease/1" for 80.233.37.24 at 2019-12-10 19:38:10 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#decrease as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 12ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 19:38:10 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cart/decrease/1" for 80.233.37.24 at 2019-12-10 19:38:14 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#decrease as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 19:38:14 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  Rendered cart/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 84.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:38:18 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart/1" for 80.233.37.24 at 2019-12-10 19:38:21 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 19:38:21 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:38:23 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:38:26 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 19:38:27 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:38:29 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:43:34 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `products' for nil:NilClass):
+    55:               <% if user_signed_in? %>
+    56:                 <li class="nav-item">
+    57:                    <%= link_to "View Cart", "/cart", { :class=>"nav-link" }%>
+    58:                    <%= @cart.products.count %>
+    59:                 </li>
+    60:               <% end %>
+    61:               <% if user_signed_in? %>
+  
+app/views/layouts/application.html.erb:58:in `_app_views_layouts_application_html_erb__1463518432638401654_70173511641440'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.4ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:45:45 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `products' for nil:NilClass):
+    55:               <% if user_signed_in? %>
+    56:                 <li class="nav-item">
+    57:                    <%= link_to "View Cart", "/cart", { :class=>"nav-link" }%>
+    58:                    <%= @cart.products.count %>
+    59:                 </li>
+    60:               <% end %>
+    61:               <% if user_signed_in? %>
+  
+app/views/layouts/application.html.erb:58:in `_app_views_layouts_application_html_erb__1463518432638401654_70173510954540'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.3ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:46:22 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:46:26 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart/increase/1" for 80.233.37.24 at 2019-12-10 19:46:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#increase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 19:46:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:46:33 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart" for 80.233.37.24 at 2019-12-10 19:49:22 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 78ms (Views: 74.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:49:24 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 19:49:40 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspot" for 80.233.37.24 at 2019-12-10 19:49:43 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#hotspot as HTML
+  Rendering static_pages/hotspot.html.erb within layouts/application
+  Rendered static_pages/hotspot.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHotspots (20191210195505)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "hotspots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "price_range" varchar, "Oddeat_diet_type" varchar, "rating" varchar, "current_offers" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191210195505"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orderitems_on_order_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orderitems_on_order_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/hotspot" for 80.233.37.24 at 2019-12-10 19:55:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#hotspot as HTML
+  Rendering static_pages/hotspot.html.erb within layouts/application
+  Rendered static_pages/hotspot.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 2930ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb__617650449054425738_70029645499260'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:56:39 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (300.6ms)
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___3524834635702663139_69941665778420'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:57:15 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___3524834635702663139_69941730568340'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:58:15 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___3524834635702663139_69941730557360'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.9ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 19:58:53 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___3524834635702663139_69941685804740'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.2ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:00:54 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+     96:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
+     97:               </li>
+     98:               <li class="nav-item">
+     99:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link" } %>
+    100:               </li>
+    101:               <li class="nav-item">
+    102:                 <%=link_to "About", about_path, { :class=>"nav-link" } %>
+  
+app/views/layouts/application.html.erb:99:in `_app_views_layouts_application_html_erb___3524834635702663139_69941684371940'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.5ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:01:12 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+     96:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
+     97:               </li>
+     98:               <li class="nav-item">
+     99:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link" } %>
+    100:               </li>
+    101:               <li class="nav-item">
+    102:                 <%=link_to "About", about_path, { :class=>"nav-link" } %>
+  
+app/views/layouts/application.html.erb:99:in `_app_views_layouts_application_html_erb___3524834635702663139_69941683275600'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.9ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:04:10 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpots", hotspot_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___3524834635702663139_69941682477580'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:04:32 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `hotspots_url_path' for #<#<Class:0x00007f392800d0f8>:0x00007f39212e6a38>
+Did you mean?  hotspots_path
+               hotspots_url
+               hotspot_path):
+    34:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
+    35:               </li>
+    36:               <li class="nav-item">
+    37:                 <%=link_to "HotSpots", hotspots_url_path, { :class=>"nav-link header__link" } %>
+    38:               </li>
+    39:               <li class="nav-item">
+    40:                 <%=link_to "About", about_path, { :class=>"nav-link header__link" } %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___3524834635702663139_69941673333560'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.5ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:04:45 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+     96:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
+     97:               </li>
+     98:               <li class="nav-item">
+     99:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link" } %>
+    100:               </li>
+    101:               <li class="nav-item">
+    102:                 <%=link_to "About", about_path, { :class=>"nav-link" } %>
+  
+app/views/layouts/application.html.erb:99:in `_app_views_layouts_application_html_erb___3524834635702663139_69941730556440'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:05:00 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    93:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
+    94:               </li>
+    95:               <li class="nav-item">
+    96:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link" } %>
+    97:               </li>
+    98:               <li class="nav-item">
+    99:                 <%=link_to "About", about_path, { :class=>"nav-link" } %>
+  
+app/views/layouts/application.html.erb:96:in `_app_views_layouts_application_html_erb___3524834635702663139_69941684019700'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.8ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:05:03 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"hotspots"} missing required keys: [:id]):
+    93:                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link" } %>
+    94:               </li>
+    95:               <li class="nav-item">
+    96:                 <%=link_to "HotSpot", hotspot_path, { :class=>"nav-link" } %>
+    97:               </li>
+    98:               <li class="nav-item">
+    99:                 <%=link_to "About", about_path, { :class=>"nav-link" } %>
+  
+app/views/layouts/application.html.erb:96:in `_app_views_layouts_application_html_erb___3524834635702663139_69941684958220'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.7ms)
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:05:34 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:05:37 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/hotspots/new" for 80.233.37.24 at 2019-12-10 20:05:40 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#new as HTML
+  Rendering hotspots/new.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (13.4ms)
+  Rendered hotspots/new.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 80ms (Views: 73.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/hotspots" for 80.233.37.24 at 2019-12-10 20:07:23 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0BdciGJO8O8VEUCMInAQc84TxWKtJJpsebJ/w3h+kPrESmqkYtUWIOIf8U7QiQpwCmeQVfTeTt/dMA7mSQLbeQ==", "hotspot"=>{"name"=>"Umi Falafel", "address"=>"13 Dame Street", "price_range"=>"€ - €€", "Oddeat_diet_type"=>"Vegan", "rating"=>"4.5 / 5", "current_offers"=>"20% lunch menu (Mon-Fri)"}, "commit"=>"Create Hotspot"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "hotspots" ("name", "address", "price_range", "Oddeat_diet_type", "rating", "current_offers", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Umi Falafel"], ["address", "13 Dame Street"], ["price_range", "€ - €€"], ["Oddeat_diet_type", "Vegan"], ["rating", "4.5 / 5"], ["current_offers", "20% lunch menu (Mon-Fri)"], ["created_at", "2019-12-10 20:07:23.968583"], ["updated_at", "2019-12-10 20:07:23.968583"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/hotspots/1
+Completed 302 Found in 12ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/hotspots/1" for 80.233.37.24 at 2019-12-10 20:07:24 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hotspots/show.html.erb within layouts/application
+  Rendered hotspots/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:07:28 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 80.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots/new" for 80.233.37.24 at 2019-12-10 20:07:33 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#new as HTML
+  Rendering hotspots/new.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (3.1ms)
+  Rendered hotspots/new.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hotspots" for 80.233.37.24 at 2019-12-10 20:09:02 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uxjX1bpBTpeVzx12Z6rn/hi/Az55GGbxxMMgHaR1y8KvReH5utqoWGLBrLSVU/393MtWCSDiskJgQVE4lQmAQQ==", "hotspot"=>{"name"=>"Manifesto", "address"=>"208 Rathmines Rd Lower, Rathmines, Dublin, D06 K466", "price_range"=>"€ - €€€", "Oddeat_diet_type"=>"Gluten Free", "rating"=>"5*", "current_offers"=>"2 For 1 on all GF Main Courses (Sun-Thurs)"}, "commit"=>"Create Hotspot"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "hotspots" ("name", "address", "price_range", "Oddeat_diet_type", "rating", "current_offers", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manifesto"], ["address", "208 Rathmines Rd Lower, Rathmines, Dublin, D06 K466"], ["price_range", "€ - €€€"], ["Oddeat_diet_type", "Gluten Free"], ["rating", "5*"], ["current_offers", "2 For 1 on all GF Main Courses (Sun-Thurs)"], ["created_at", "2019-12-10 20:09:02.068057"], ["updated_at", "2019-12-10 20:09:02.068057"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/hotspots/2
+Completed 302 Found in 12ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/hotspots/2" for 80.233.37.24 at 2019-12-10 20:09:02 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering hotspots/show.html.erb within layouts/application
+  Rendered hotspots/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:09:07 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots/new" for 80.233.37.24 at 2019-12-10 20:09:47 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#new as HTML
+  Rendering hotspots/new.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (3.0ms)
+  Rendered hotspots/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hotspots" for 80.233.37.24 at 2019-12-10 20:11:13 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A0Ov3uvPgdWmNxx52qG5ei36P9xyCsaLc1AhkgKuLKoXHpny61RnGlE5rbsoWKN56Y5q6yvwEjjX0lC3M9JnKQ==", "hotspot"=>{"name"=>"Urban Brewing & Stack A Restaurant", "address"=>"Vault C, CHQ Building, Custom House Quay, Dublin", "price_range"=>"€ - €€€", "Oddeat_diet_type"=>"Veggie", "rating"=>"4*", "current_offers"=>"15% Off Seasonal Menu (valid Mon-Sun. t&cs apply.)"}, "commit"=>"Create Hotspot"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "hotspots" ("name", "address", "price_range", "Oddeat_diet_type", "rating", "current_offers", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Urban Brewing & Stack A Restaurant"], ["address", "Vault C, CHQ Building, Custom House Quay, Dublin"], ["price_range", "€ - €€€"], ["Oddeat_diet_type", "Veggie"], ["rating", "4*"], ["current_offers", "15% Off Seasonal Menu (valid Mon-Sun. t&cs apply.)"], ["created_at", "2019-12-10 20:11:13.648306"], ["updated_at", "2019-12-10 20:11:13.648306"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/hotspots/3
+Completed 302 Found in 13ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/hotspots/3" for 80.233.37.24 at 2019-12-10 20:11:13 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering hotspots/show.html.erb within layouts/application
+  Rendered hotspots/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hotspots/3/edit" for 80.233.37.24 at 2019-12-10 20:11:16 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering hotspots/edit.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (3.2ms)
+  Rendered hotspots/edit.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 83.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:11:19 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots/new" for 80.233.37.24 at 2019-12-10 20:11:29 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#new as HTML
+  Rendering hotspots/new.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (3.0ms)
+  Rendered hotspots/new.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:13:54 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:13:56 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots/new" for 80.233.37.24 at 2019-12-10 20:13:58 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#new as HTML
+  Rendering hotspots/new.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (3.1ms)
+  Rendered hotspots/new.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/hotspots" for 80.233.37.24 at 2019-12-10 20:14:31 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuHl2ZyT2K1xRS1Pam/RL8hObN5gga0uomdBokbIB2USvNP1nAg+YoZLnI2YlsssDDo56Tl7eZ0G5TCHd7RM5g==", "hotspot"=>{"name"=>"Green 19", "address"=>"19 Camden Street Lower, Saint Kevin's, Dublin 2", "price_range"=>"€ - €€", "Oddeat_diet_type"=>"Low-Cal", "rating"=>"4*", "current_offers"=>"25% student discount"}, "commit"=>"Create Hotspot"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "hotspots" ("name", "address", "price_range", "Oddeat_diet_type", "rating", "current_offers", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Green 19"], ["address", "19 Camden Street Lower, Saint Kevin's, Dublin 2"], ["price_range", "€ - €€"], ["Oddeat_diet_type", "Low-Cal"], ["rating", "4*"], ["current_offers", "25% student discount"], ["created_at", "2019-12-10 20:14:31.089404"], ["updated_at", "2019-12-10 20:14:31.089404"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/hotspots/4
+Completed 302 Found in 12ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/hotspots/4" for 80.233.37.24 at 2019-12-10 20:14:31 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering hotspots/show.html.erb within layouts/application
+  Rendered hotspots/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:14:33 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots/1/edit" for 80.233.37.24 at 2019-12-10 20:14:39 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hotspots/edit.html.erb within layouts/application
+  Rendered hotspots/_form.html.erb (3.1ms)
+  Rendered hotspots/edit.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 84.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/hotspots/1" for 80.233.37.24 at 2019-12-10 20:14:49 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"luJ5gKQmI16qAYc22wWAyCntNBGFzLTNiPKYp32KYdRBiPKIz/ZxfL00Xrc3cxI7TMBBZ/nvRXvzzQnB82g6gA==", "hotspot"=>{"name"=>"Umi Falafel", "address"=>"13 Dame Street", "price_range"=>"€ - €€", "Oddeat_diet_type"=>"Vegan", "rating"=>"4*", "current_offers"=>"20% lunch menu (Mon-Fri)"}, "commit"=>"Update Hotspot", "id"=>"1"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "hotspots" SET "rating" = ?, "updated_at" = ? WHERE "hotspots"."id" = ?[0m  [["rating", "4*"], ["updated_at", "2019-12-10 20:14:49.365620"], ["id", 1]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/hotspots/1
+Completed 302 Found in 13ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/hotspots/1" for 80.233.37.24 at 2019-12-10 20:14:49 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotspot Load (0.1ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hotspots/show.html.erb within layouts/application
+  Rendered hotspots/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:14:52 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots/1" for 80.233.37.24 at 2019-12-10 20:15:48 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotspot Load (0.9ms)[0m  [1m[34mSELECT  "hotspots".* FROM "hotspots" WHERE "hotspots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hotspots/show.html.erb within layouts/application
+  Rendered hotspots/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:15:49 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:17:11 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:17:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:17:36 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (12.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 80.233.37.24 at 2019-12-10 20:17:39 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 20:17:42 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 100ms (Views: 96.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/hotspots" for 80.233.37.24 at 2019-12-10 20:17:47 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 20:17:49 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:17:51 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/new" for 80.233.37.24 at 2019-12-10 20:17:52 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#new as HTML
+  Rendering vouchers/new.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (4.4ms)
+  Rendered vouchers/new.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:17:58 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart/1" for 80.233.37.24 at 2019-12-10 20:18:05 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 20:18:05 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clearCart" for 80.233.37.24 at 2019-12-10 20:18:09 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#clearCart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 20:18:09 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  Rendered cart/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 60.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:18:11 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/new" for 80.233.37.24 at 2019-12-10 20:18:15 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#new as HTML
+  Rendering vouchers/new.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (3.0ms)
+  Rendered vouchers/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/vouchers" for 80.233.37.24 at 2019-12-10 20:19:40 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oL5ix3bYEcoUaYCBQkGGuc+zvy3+/aDwBRFoJQhXY9hoF84P0kgnQVXNEv4M+H360cv8vA8R6NMfOLCL/nOghg==", "voucher"=>{"title"=>"Green 19", "description"=>"20% off @ Green 19 (Sun-Thurs)", "price"=>"€10", "image_url"=>"", "category"=>"Low-Cal"}, "commit"=>"Create Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "vouchers" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Green 19"], ["description", "20% off @ Green 19 (Sun-Thurs)"], ["price", 0.0], ["image_url", ""], ["category", "Low-Cal"], ["created_at", "2019-12-10 20:19:40.632128"], ["updated_at", "2019-12-10 20:19:40.632128"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/4
+Completed 302 Found in 14ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/vouchers/4" for 80.233.37.24 at 2019-12-10 20:19:40 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:19:43 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/new" for 80.233.37.24 at 2019-12-10 20:19:47 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#new as HTML
+  Rendering vouchers/new.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (2.9ms)
+  Rendered vouchers/new.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/vouchers" for 80.233.37.24 at 2019-12-10 20:20:52 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QJQswxoDhyipVtT+/Fd4z6U/dOjSds7bCsRhoihqs46IPYALvpOxo+jyRoGy7oOMu0c3eSOahvgQ7bkM3k5w0A==", "voucher"=>{"title"=>"OddEats €50", "description"=>"€50 to spend at any OddEats participating restaurant. ", "price"=>"€50", "image_url"=>"", "category"=>"Voucher"}, "commit"=>"Create Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "vouchers" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "OddEats €50"], ["description", "€50 to spend at any OddEats participating restaurant. "], ["price", 0.0], ["image_url", ""], ["category", "Voucher"], ["created_at", "2019-12-10 20:20:52.478778"], ["updated_at", "2019-12-10 20:20:52.478778"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/5
+Completed 302 Found in 14ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/vouchers/5" for 80.233.37.24 at 2019-12-10 20:20:52 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:20:56 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/new" for 80.233.37.24 at 2019-12-10 20:21:02 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#new as HTML
+  Rendering vouchers/new.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (2.9ms)
+  Rendered vouchers/new.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/vouchers" for 80.233.37.24 at 2019-12-10 20:21:45 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WH0hy660X+gRyu3INb688qypHl6+G2y0SbEUXkYYxiyQ1I0DCiRpY1Buf7d7B0exstFdz0/3JJdTmMzwsDwFcg==", "voucher"=>{"title"=>"OddEats €20", "description"=>"€20 to spend at any OddEats participating restaurant", "price"=>"€20", "image_url"=>"", "category"=>"Voucher"}, "commit"=>"Create Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----MIIHZwYJKoZIhvcNAQcEoIIHWDCCB1QCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCP82Q79lQPa83hgqZCsZ9MlGmHGBDxKBpoYgxFGBwWISMVy5QGe/2HQ8itS309/Q9KrYTojm8hAh1ziZXHqXH9BKywvYu0pKCkUk0hTsk4AQMQAy5qsuDv3grrGr2M0j6lBvP6UAtH3lbUWHCbA2Ky0KTkAv0HMFz6WQ31HBHtMDELMAkGBSsOAwIaBQAwgeQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIDAXBrvJBS+yAgcC2SZtlRzNQ5qJMW4bpyyvo9HXEQULPbppoyiS/lirL3Elu1bYonNyqnEaXhHHjdD+WJcORdo4Kd6JTSRdHBNiMT+Avf7ypKmT78qM1oJ11LbiATIFAgSWgCTs1rOki1qqD3ab0/UHk5LsObutEo+z6gu/PW1TSvvgvhOD1jwDSJqDXuakWRM6mywQ9Po9eHrXSy1ytRH+hf14cl277CdlxCytz27sPnAnI6aeYVMN9kDbfFPD/k0QCkeD5MYw5bW+gggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xOTEyMDgyMTA2MDJaMCMGCSqGSIb3DQEJBDEWBBTWNv4jx54RTy6U7NR6a6uk00TZ4TANBgkqhkiG9w0BAQEFAASBgGze91pN5d5/riWziDIn2o7dYqwG5UzL3UeRr2QbbcHSEzCVeGHnuWqW6vIZ2iTfL0+RDfKzBKhEZj32nzsHvsSLDS23GPh/tWATYWeJAE1IkLY7dMEu7PkoEXhTe1H+cL1MsCXBiZYSEVd2IX7zwU7Hy+x1c962ysJ1zq0ijSwB-----END PKCS7-----"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "vouchers" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "OddEats €20"], ["description", "€20 to spend at any OddEats participating restaurant"], ["price", 0.0], ["image_url", ""], ["category", "Voucher"], ["created_at", "2019-12-10 20:21:45.431506"], ["updated_at", "2019-12-10 20:21:45.431506"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/6
+Completed 302 Found in 13ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/vouchers/6" for 80.233.37.24 at 2019-12-10 20:21:45 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:21:48 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/new" for 80.233.37.24 at 2019-12-10 20:21:54 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#new as HTML
+  Rendering vouchers/new.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (2.8ms)
+  Rendered vouchers/new.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/vouchers" for 80.233.37.24 at 2019-12-10 20:22:27 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hx9fg8NDa27vafr33eGJr19P2P6hisUXmSRMKowgwZbXtvNLZ9Nd5a7NaIiTWHLsQTebb1BmjTSDDZSEegQCyA==", "voucher"=>{"title"=>"OddEats €100", "description"=>"€100 to spend at any OddEats participating restaurant", "price"=>"€100", "image_url"=>"", "category"=>"Voucher"}, "commit"=>"Create Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "vouchers" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "OddEats €100"], ["description", "€100 to spend at any OddEats participating restaurant"], ["price", 0.0], ["image_url", ""], ["category", "Voucher"], ["created_at", "2019-12-10 20:22:27.627122"], ["updated_at", "2019-12-10 20:22:27.627122"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/7
+Completed 302 Found in 13ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/vouchers/7" for 80.233.37.24 at 2019-12-10 20:22:27 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:22:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/1" for 80.233.37.24 at 2019-12-10 20:22:33 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 73.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers/1/edit" for 80.233.37.24 at 2019-12-10 20:22:35 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vouchers/edit.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (3.0ms)
+  Rendered vouchers/edit.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 68.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vouchers/1" for 80.233.37.24 at 2019-12-10 20:22:55 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CXesDXhdNx/eHfGxxz089iP8QuE19tV7f7bUwYScJPBLK7IowUED8EmlOY1vLmE6NelUBAIh41BQ+UFWVPFQQg==", "voucher"=>{"title"=>"Happy Food", "description"=>"30% off at Happy Food", "price"=>"20.0", "image_url"=>"", "category"=>"vegan"}, "commit"=>"Update Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----", "id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "vouchers" SET "description" = ?, "updated_at" = ? WHERE "vouchers"."id" = ?[0m  [["description", "30% off at Happy Food"], ["updated_at", "2019-12-10 20:22:55.273418"], ["id", 1]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/1
+Completed 302 Found in 14ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/vouchers/1" for 80.233.37.24 at 2019-12-10 20:22:55 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:22:59 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/3" for 80.233.37.24 at 2019-12-10 20:23:04 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers/3/edit" for 80.233.37.24 at 2019-12-10 20:23:06 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering vouchers/edit.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (3.0ms)
+  Rendered vouchers/edit.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 86.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vouchers/3" for 80.233.37.24 at 2019-12-10 20:23:52 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u/I73Fn/g6xeEnteHRwxBVxT6zCWxSCKnKSkNMZVvK09lPQkz33YaIO0uCziMeTa0795CNbk2KjvRtLzzGs1EA==", "voucher"=>{"title"=>"Happy Food", "description"=>"2 course meal for 2 at Happy Food", "price"=>"€30", "image_url"=>"", "category"=>"Vegan"}, "commit"=>"Update Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----", "id"=>"3"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "vouchers" SET "title" = ?, "description" = ?, "price" = ?, "category" = ?, "updated_at" = ? WHERE "vouchers"."id" = ?[0m  [["title", "Happy Food"], ["description", "2 course meal for 2 at Happy Food"], ["price", 0.0], ["category", "Vegan"], ["updated_at", "2019-12-10 20:23:52.799383"], ["id", 3]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/3
+Completed 302 Found in 15ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/vouchers/3" for 80.233.37.24 at 2019-12-10 20:23:52 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:23:55 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/2" for 80.233.37.24 at 2019-12-10 20:24:02 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers/2/edit" for 80.233.37.24 at 2019-12-10 20:24:04 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering vouchers/edit.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (3.0ms)
+  Rendered vouchers/edit.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vouchers/2" for 80.233.37.24 at 2019-12-10 20:24:55 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WbqsP5rbyr10eeuGdp5/xCINywEy3y+TfCRMyMR79NR1JN+v7jmVLyItiFAoPehn+qb7zKuOCrMM96yuJQPslw==", "voucher"=>{"title"=>"Koh", "description"=>"3 course meal for two with one cocktail each. ", "price"=>"€60", "image_url"=>"", "category"=>"Gluten-Free"}, "commit"=>"Update Voucher", "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----", "id"=>"2"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  [1m[33mUPDATE "vouchers" SET "title" = ?, "description" = ?, "price" = ?, "category" = ?, "updated_at" = ? WHERE "vouchers"."id" = ?[0m  [["title", "Koh"], ["description", "3 course meal for two with one cocktail each. "], ["price", 0.0], ["category", "Gluten-Free"], ["updated_at", "2019-12-10 20:24:55.617098"], ["id", 2]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/2
+Completed 302 Found in 16ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/vouchers/2" for 80.233.37.24 at 2019-12-10 20:24:55 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:24:59 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers/1" for 80.233.37.24 at 2019-12-10 20:25:01 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers/1/edit" for 80.233.37.24 at 2019-12-10 20:25:03 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vouchers/edit.html.erb within layouts/application
+  Rendered vouchers/_form.html.erb (3.0ms)
+  Rendered vouchers/edit.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vouchers/1" for 80.233.37.24 at 2019-12-10 20:25:05 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JPy+1CQPkmsFWqBrePEUYCY3HdwkP5LIRKzu9ZNRthJmoKDxnROmhJLiaFfQ4kmsMCILORPopONr43tiQzzCoA==", "voucher"=>{"title"=>"Happy Food", "description"=>"30% off at Happy Food", "price"=>"20.0", "image_url"=>"", "category"=>"vegan"}, "cmd"=>"_s-xclick", "encrypted"=>"-----BEGIN PKCS7-----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-----END PKCS7-----", "submit.x"=>"85", "submit.y"=>"6", "id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/vouchers/1
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers/1" for 80.233.37.24 at 2019-12-10 20:25:05 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering vouchers/show.html.erb within layouts/application
+  Rendered vouchers/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 20:25:11 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart/1" for 80.233.37.24 at 2019-12-10 20:25:13 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 80.233.37.24 at 2019-12-10 20:25:13 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 63ms (Views: 60.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/checkout" for 80.233.37.24 at 2019-12-10 20:25:14 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#createOrder as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "orders" ("order_date", "user_id", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["order_date", "2019-12-10 20:25:14.749939"], ["user_id", 2], ["status", "Pending"], ["created_at", "2019-12-10 20:25:14.760267"], ["updated_at", "2019-12-10 20:25:14.760267"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "orderitems" ("item_id", "title", "description", "quantity", "price", "order_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["item_id", 1], ["title", "Happy Food"], ["description", "30% off at Happy Food"], ["quantity", 1], ["price", 20.0], ["order_id", 53], ["created_at", "2019-12-10 20:25:14.785481"], ["updated_at", "2019-12-10 20:25:14.785481"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering cart/createOrder.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT "orderitems".* FROM "orderitems" WHERE "orderitems"."order_id" = 53[0m
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT  "orderitems".* FROM "orderitems" WHERE "orderitems"."id" = 57 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered cart/createOrder.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 128ms (Views: 61.8ms | ActiveRecord: 22.6ms)
+
+

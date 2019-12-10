@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
+  resources :hotspots
   resources :restaurants
   resources :orders
+  
   get 'orderitems/index'
 
   get 'orderitems/show'
@@ -49,8 +51,6 @@ Rails.application.routes.draw do
   get '/paid/:id', to: 'static_pages#paid'
 
   get '/contact' => 'static_pages#contact'
-
-  get '/hotspot' => 'static_pages#hotspot'
   
   root :to => 'site#home'
   

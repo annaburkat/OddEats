@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hotspot.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @hotspot.address %>
+</p>
+
+<p>
+  <strong>Price range:</strong>
+  <%= @hotspot.price_range %>
+</p>
+
+<p>
+  <strong>Oddeat diet type:</strong>
+  <%= @hotspot.Oddeat_diet_type %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @hotspot.rating %>
+</p>
+
+<p>
+  <strong>Current offers:</strong>
+  <%= @hotspot.current_offers %>
+</p>
+
+<%= link_to 'Edit', edit_hotspot_path(@hotspot) %> |
+<%= link_to 'Back', hotspots_path %> |
+<%= link_to 'Buy Vouchers', vouchers_path %> |

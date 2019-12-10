@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191210182709) do
+ActiveRecord::Schema.define(version: 20191210195505) do
+
+  create_table "hotspots", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "price_range"
+    t.string   "Oddeat_diet_type"
+    t.string   "rating"
+    t.string   "current_offers"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "items", force: :cascade do |t|
     t.string   "title"
