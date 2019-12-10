@@ -13112,3 +13112,288 @@ Processing by CartController#createOrder as HTML
 Completed 200 OK in 80ms (Views: 47.2ms | ActiveRecord: 9.5ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRestaurants (20191210182709)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "description" varchar, "opening_hours" varchar, "price_range" varchar, "oddeat_diet_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191210182709"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orderitems_on_order_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orderitems_on_order_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 18:27:30 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 3029ms (Views: 3019.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vouchers" for 80.233.37.24 at 2019-12-10 18:28:01 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.3ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vouchers/restaurant" for 80.233.37.24 at 2019-12-10 18:28:08 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#show as HTML
+  Parameters: {"id"=>"restaurant"}
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Voucher with 'id'=restaurant):
+  
+app/controllers/vouchers_controller.rb:72:in `set_voucher'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 18:28:16 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/new" for 80.233.37.24 at 2019-12-10 18:28:21 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.html.erb within layouts/application
+  Rendered restaurants/_form.html.erb (21.8ms)
+  Rendered restaurants/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 115ms (Views: 103.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/restaurants" for 80.233.37.24 at 2019-12-10 18:29:08 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BbAbrKzrZJISP1Xzx5p/1mOLHqqccn1YTofbtjtWnt0RVdmCuCXKmB1+sbC5x9na+2Fp2ca5sA7Pbk1GCi3jMA==", "restaurant"=>{"name"=>"Sova Vegan Butcher", "address"=>"14/15 St Andrew's St, Dublin 2", "description"=>"All Eats", "opening_hours"=>"09:00 - 22:30", "price_range"=>"€ - €€€", "oddeat_diet_type"=>"Vegan, Gluten Free, Vegetarian Options"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "description", "opening_hours", "price_range", "oddeat_diet_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sova Vegan Butcher"], ["address", "14/15 St Andrew's St, Dublin 2"], ["description", "All Eats"], ["opening_hours", "09:00 - 22:30"], ["price_range", "€ - €€€"], ["oddeat_diet_type", "Vegan, Gluten Free, Vegetarian Options"], ["created_at", "2019-12-10 18:29:08.354144"], ["updated_at", "2019-12-10 18:29:08.354144"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/restaurants/1
+Completed 302 Found in 17ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/restaurants/1" for 80.233.37.24 at 2019-12-10 18:29:08 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 114ms (Views: 111.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 18:29:11 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/new" for 80.233.37.24 at 2019-12-10 18:29:12 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.html.erb within layouts/application
+  Rendered restaurants/_form.html.erb (3.1ms)
+  Rendered restaurants/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 80.233.37.24 at 2019-12-10 18:29:50 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tdUcPbEuZljU1G4nr3uooKQISt2SCcmO1FDBydIxZhOhMN4TpeDIUtuVimTRJg6sPOI9rsjCBNhVuVc540ob/g==", "restaurant"=>{"name"=>"Koh", "address"=>"6, 7 Jervis Street,  Millennium Walkway, Dublin 1 ", "description"=>"Thai Eats", "opening_hours"=>"10:00-23:00", "price_range"=>"€ - €€€", "oddeat_diet_type"=>"Vegan, Gluten Free, Vegetarian Options, Carnivores Welcome"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "description", "opening_hours", "price_range", "oddeat_diet_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Koh"], ["address", "6, 7 Jervis Street,  Millennium Walkway, Dublin 1 "], ["description", "Thai Eats"], ["opening_hours", "10:00-23:00"], ["price_range", "€ - €€€"], ["oddeat_diet_type", "Vegan, Gluten Free, Vegetarian Options, Carnivores Welcome"], ["created_at", "2019-12-10 18:29:50.123239"], ["updated_at", "2019-12-10 18:29:50.123239"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/restaurants/2
+Completed 302 Found in 13ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/restaurants/2" for 80.233.37.24 at 2019-12-10 18:29:50 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 18:29:53 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/new" for 80.233.37.24 at 2019-12-10 18:29:54 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.html.erb within layouts/application
+  Rendered restaurants/_form.html.erb (3.0ms)
+  Rendered restaurants/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 80.233.37.24 at 2019-12-10 18:30:10 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNlz9WBoEp5QD4thF/2myPV/H4jfahZYi2up1iVcwhpUPLHbdKa8lF9ObyJpoADEbZVo+4Wh2w4Kgj8mFCe/9w==", "restaurant"=>{"name"=>"Red Torch Ginger", "address"=>"19-20 Wicklow St, Dublin 2", "description"=>"Thai Eats", "opening_hours"=>"10:00-23:00", "price_range"=>"€ - €€€", "oddeat_diet_type"=>"Vegan, Gluten Free, Vegetarian Options, Carnivores Welcome"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "description", "opening_hours", "price_range", "oddeat_diet_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Red Torch Ginger"], ["address", "19-20 Wicklow St, Dublin 2"], ["description", "Thai Eats"], ["opening_hours", "10:00-23:00"], ["price_range", "€ - €€€"], ["oddeat_diet_type", "Vegan, Gluten Free, Vegetarian Options, Carnivores Welcome"], ["created_at", "2019-12-10 18:30:10.764715"], ["updated_at", "2019-12-10 18:30:10.764715"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/restaurants/3
+Completed 302 Found in 11ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/restaurants/3" for 80.233.37.24 at 2019-12-10 18:30:10 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 18:30:14 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/new" for 80.233.37.24 at 2019-12-10 18:30:16 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.html.erb within layouts/application
+  Rendered restaurants/_form.html.erb (3.1ms)
+  Rendered restaurants/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 80.233.37.24 at 2019-12-10 18:30:37 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L/vZTdv8mXW1NEVTIFrlk6vTFxzMhDbRokE/6UNTTzY7HhtjzzI3f7p1oRBeB0OfMzlgb5ZP+4cjqKkZcigy2w==", "restaurant"=>{"name"=>"Cornucopia Wholefoods Restaurant", "address"=>"26-28 Clarendon St, Dublin 2", "description"=>"Italian Eats", "opening_hours"=>"09:00 - 22:30", "price_range"=>"€-€€", "oddeat_diet_type"=>"Vegan, Gluten Free, Vegetarian Options"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "description", "opening_hours", "price_range", "oddeat_diet_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cornucopia Wholefoods Restaurant"], ["address", "26-28 Clarendon St, Dublin 2"], ["description", "Italian Eats"], ["opening_hours", "09:00 - 22:30"], ["price_range", "€-€€"], ["oddeat_diet_type", "Vegan, Gluten Free, Vegetarian Options"], ["created_at", "2019-12-10 18:30:37.303572"], ["updated_at", "2019-12-10 18:30:37.303572"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/restaurants/4
+Completed 302 Found in 12ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/restaurants/4" for 80.233.37.24 at 2019-12-10 18:30:37 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 18:30:39 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/new" for 80.233.37.24 at 2019-12-10 18:30:44 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.html.erb within layouts/application
+  Rendered restaurants/_form.html.erb (3.1ms)
+  Rendered restaurants/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 80.233.37.24 at 2019-12-10 18:31:06 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D8PF0wMklWRCUfNSfleNc5MwfNMOHBwAtao28/2XPhgbJgf9F+o7bk0QFxEACit/C9oLoFTX0VY0Q6ADzOxD9Q==", "restaurant"=>{"name"=>"Saba", "address"=>"51 Pleasants St, Dublin", "description"=>"All Eats", "opening_hours"=>"10:00-23:00", "price_range"=>"€-€€", "oddeat_diet_type"=>"Vegan, Gluten Free, Vegetarian Options, Carnivores Welcome"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "description", "opening_hours", "price_range", "oddeat_diet_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Saba"], ["address", "51 Pleasants St, Dublin"], ["description", "All Eats"], ["opening_hours", "10:00-23:00"], ["price_range", "€-€€"], ["oddeat_diet_type", "Vegan, Gluten Free, Vegetarian Options, Carnivores Welcome"], ["created_at", "2019-12-10 18:31:06.934449"], ["updated_at", "2019-12-10 18:31:06.934449"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/restaurants/5
+Completed 302 Found in 13ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/restaurants/5" for 80.233.37.24 at 2019-12-10 18:31:07 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants" for 80.233.37.24 at 2019-12-10 18:31:09 +0000
+Cannot render console from 80.233.37.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
