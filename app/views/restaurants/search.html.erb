@@ -1,0 +1,27 @@
+<% provide(:title, "Search") %>
+
+<table class="catalog">
+  <% @restaurants.each do |restaurant| %>
+      <tr>
+        <td>
+          <div class="image">
+            <%= link_to (image_tag restaurant.image_url, :style => "height:100px"), voucher %>
+          </div>
+          <div class="title">
+            <%= link_to restaurant.title, restaurant %>
+          </div>
+          <div class="description">
+            <%= restaurant.description %>
+          </div>  
+          <div class="links">
+            <% if user_signed_in? %>
+              <%= link_to 'Edit', edit_restaurant_path(restaurant) %>
+              <%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%else%>
+            
+            <%end%>  
+        </div>
+        </td>
+      </tr>
+    <% end %>
+</table>

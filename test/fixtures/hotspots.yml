@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  price_range: MyString
+  Oddeat_diet_type: MyString
+  rating: MyString
+  current_offers: MyString
+
+two:
+  name: MyString
+  address: MyString
+  price_range: MyString
+  Oddeat_diet_type: MyString
+  rating: MyString
+  current_offers: MyString

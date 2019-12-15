@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hotspots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Price range</th>
+      <th>Oddeat diet type</th>
+      <th>Rating</th>
+      <th>Current offers</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hotspots.each do |hotspot| %>
+      <tr>
+        <td><%= hotspot.name %></td>
+        <td><%= hotspot.address %></td>
+        <td><%= hotspot.price_range %></td>
+        <td><%= hotspot.Oddeat_diet_type %></td>
+        <td><%= hotspot.rating %></td>
+        <td><%= hotspot.current_offers %></td>
+        <td><%= link_to 'Show', hotspot %></td>
+        <td><%= link_to 'Edit', edit_hotspot_path(hotspot) %></td>
+        <td><%= link_to 'Destroy', hotspot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hotspot', new_hotspot_path %> | 
+<%= link_to 'Buy Vouchers', vouchers_path %> |

@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191205143314) do
+ActiveRecord::Schema.define(version: 20191215202117) do
+
+  create_table "hotspots", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "price_range"
+    t.string   "Oddeat_diet_type"
+    t.string   "rating"
+    t.string   "current_offers"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "items", force: :cascade do |t|
     t.string   "title"
@@ -44,6 +55,17 @@ ActiveRecord::Schema.define(version: 20191205143314) do
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
+  create_table "restaurants", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "description"
+    t.string   "opening_hours"
+    t.string   "price_range"
+    t.string   "oddeat_diet_type"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -52,6 +74,10 @@ ActiveRecord::Schema.define(version: 20191205143314) do
     t.datetime "remember_created_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "diet_type"
+    t.string   "phone"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
