@@ -9,11 +9,14 @@
           <%= f.text_field :firstName%></div>
      <div><%= f.label :lastName %><br />
           <%= f.text_field :lastName %></div>
-  
+     <div><%= f.label :diet_type %><br />
+          <%= f.text_field :diet_type %></div>
+          
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
+
   
   <div class="field">
     <%= f.label :password %>
