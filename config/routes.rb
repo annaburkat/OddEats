@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'users/show'
+
   resources :hotspots
   resources :restaurants
   resources :orders
