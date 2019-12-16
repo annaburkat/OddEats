@@ -24171,3 +24171,337 @@ Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.2ms)
 >>>>>>> b0f64bb4cf067e5c005b9ca09fc4b70bb1e2f238
 
 
+Started GET "/users/edit" for 86.44.233.219 at 2019-12-15 22:21:34 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 393ms (Views: 375.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 86.44.233.219 at 2019-12-15 22:21:40 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 86.44.233.219 at 2019-12-15 22:21:46 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (14.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hotspots" for 86.44.233.219 at 2019-12-15 22:21:48 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/about" for 86.44.233.219 at 2019-12-15 22:21:50 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 86.44.233.219 at 2019-12-15 22:21:51 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for 86.44.233.219 at 2019-12-15 22:21:52 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (9.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders" for 86.44.233.219 at 2019-12-15 22:21:53 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 75.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vouchers" for 86.44.233.219 at 2019-12-15 22:21:57 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 86.44.233.219 at 2019-12-15 22:22:01 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 86.44.233.219 at 2019-12-15 22:22:02 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart/1" for 86.44.233.219 at 2019-12-15 22:22:03 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 86.44.233.219 at 2019-12-15 22:22:04 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/checkout" for 86.44.233.219 at 2019-12-15 22:22:06 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#createOrder as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("order_date", "user_id", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["order_date", "2019-12-15 22:22:06.381177"], ["user_id", 1], ["status", "Pending"], ["created_at", "2019-12-15 22:22:06.391954"], ["updated_at", "2019-12-15 22:22:06.391954"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "orderitems" ("item_id", "title", "description", "quantity", "price", "order_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["item_id", 1], ["title", "OddEats €50"], ["description", "€50 Odd Eats voucher"], ["quantity", 1], ["price", 50.0], ["order_id", 1], ["created_at", "2019-12-15 22:22:06.413802"], ["updated_at", "2019-12-15 22:22:06.413802"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering cart/createOrder.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT "orderitems".* FROM "orderitems" WHERE "orderitems"."order_id" = 1[0m
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT  "orderitems".* FROM "orderitems" WHERE "orderitems"."id" = 1 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered cart/createOrder.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 131ms (Views: 74.9ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/paid/1" for 86.44.233.219 at 2019-12-15 22:22:08 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#paid as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "orders" SET "status" = ?, "updated_at" = ? WHERE "orders"."id" = ?[0m  [["status", "Paid by User: carlalew94@gmail.com"], ["updated_at", "2019-12-15 22:22:08.858648"], ["id", 1]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  Rendering static_pages/paid.html.erb within layouts/application
+  Rendered static_pages/paid.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 73ms (Views: 56.7ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/orders" for 86.44.233.219 at 2019-12-15 22:22:12 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered orders/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 86.44.233.219 at 2019-12-15 22:22:17 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart/2" for 86.44.233.219 at 2019-12-15 22:22:20 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://53ab610286c44a28928023880eead46c.vfs.cloud9.us-east-1.amazonaws.com/cart/index
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart/index" for 86.44.233.219 at 2019-12-15 22:22:20 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cart/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cart/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/checkout" for 86.44.233.219 at 2019-12-15 22:22:22 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#createOrder as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "orders" ("order_date", "user_id", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["order_date", "2019-12-15 22:22:22.321723"], ["user_id", 1], ["status", "Pending"], ["created_at", "2019-12-15 22:22:22.323110"], ["updated_at", "2019-12-15 22:22:22.323110"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVoucher Load (0.1ms)[0m  [1m[34mSELECT  "vouchers".* FROM "vouchers" WHERE "vouchers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "orderitems" ("item_id", "title", "description", "quantity", "price", "order_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["item_id", 2], ["title", "OddEats €20"], ["description", "€20 OddEats voucher"], ["quantity", 1], ["price", 20.0], ["order_id", 2], ["created_at", "2019-12-15 22:22:22.335669"], ["updated_at", "2019-12-15 22:22:22.335669"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering cart/createOrder.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT "orderitems".* FROM "orderitems" WHERE "orderitems"."order_id" = 2[0m
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT  "orderitems".* FROM "orderitems" WHERE "orderitems"."id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered cart/createOrder.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 91ms (Views: 62.9ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/checkout" for 86.44.233.219 at 2019-12-15 22:23:44 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartController#createOrder as HTML
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("order_date", "user_id", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["order_date", "2019-12-15 22:23:44.398271"], ["user_id", 1], ["status", "Pending"], ["created_at", "2019-12-15 22:23:44.399773"], ["updated_at", "2019-12-15 22:23:44.399773"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering cart/createOrder.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOrderitem Load (0.1ms)[0m  [1m[34mSELECT "orderitems".* FROM "orderitems" WHERE "orderitems"."order_id" = 3[0m
+  Rendered cart/createOrder.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 88ms (Views: 60.1ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/" for 86.44.233.219 at 2019-12-15 22:29:22 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 86.44.233.219 at 2019-12-15 22:29:23 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/vouchers" for 86.44.233.219 at 2019-12-15 22:29:29 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotspots" for 86.44.233.219 at 2019-12-15 22:29:31 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HotspotsController#index as HTML
+  Rendering hotspots/index.html.erb within layouts/application
+  [1m[36mHotspot Load (0.2ms)[0m  [1m[34mSELECT "hotspots".* FROM "hotspots"[0m
+  Rendered hotspots/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 86.44.233.219 at 2019-12-15 22:29:35 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for 86.44.233.219 at 2019-12-15 22:29:36 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for 86.44.233.219 at 2019-12-15 22:29:38 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/1" for 86.44.233.219 at 2019-12-15 22:29:44 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 57.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vouchers" for 86.44.233.219 at 2019-12-15 22:29:47 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VouchersController#index as HTML
+  Rendering vouchers/index.html.erb within layouts/application
+  [1m[36mVoucher Load (0.2ms)[0m  [1m[34mSELECT "vouchers".* FROM "vouchers"[0m
+  Rendered vouchers/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 86.44.233.219 at 2019-12-15 22:29:54 +0000
+Cannot render console from 86.44.233.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.2ms)
+
+
