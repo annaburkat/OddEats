@@ -18,7 +18,9 @@
           
           <a href="/cart/<%= @voucher.id %>" class="button">Add To Cart</a>
           
+          <% if session[:login] == 1 && current_user.admin === false %> 
           <%= link_to 'Edit', edit_voucher_path(@voucher) %> |
+          <% end %>
           <%= link_to 'Back', vouchers_path %>
     </div>
   </div>

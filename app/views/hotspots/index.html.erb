@@ -1,3 +1,4 @@
+<% provide(:title, "Hotspots") %>
 <p id="notice"><%= notice %></p>
 
 <h1>Hotspots</h1>
@@ -25,8 +26,10 @@
         <td><%= hotspot.rating %></td>
         <td><%= hotspot.current_offers %></td>
         <td><%= link_to 'Show', hotspot %></td>
-        <td><%= link_to 'Edit', edit_hotspot_path(hotspot) %></td>
-        <td><%= link_to 'Destroy', hotspot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if session[:login] == 1 %> 
+          <td><%= link_to 'Edit', edit_hotspot_path(hotspot) %></td>
+          <td><%= link_to 'Destroy', hotspot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -34,5 +37,7 @@
 
 <br>
 
-<%= link_to 'New Hotspot', new_hotspot_path %> | 
-<%= link_to 'Buy Vouchers', vouchers_path %> |
+<% if session[:login] == 1 %> 
+  <%= link_to 'New Hotspot', new_hotspot_path %> 
+<% end %>
+<%= link_to 'Buy Vouchers', vouchers_path %>

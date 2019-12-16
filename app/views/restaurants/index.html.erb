@@ -1,3 +1,4 @@
+<% provide(:title, "Restaurants") %>
 <p id="notice"><%= notice %></p>
 
 <h1>Restaurants</h1>
@@ -25,8 +26,10 @@
         <td><%= restaurant.price_range %></td>
         <td><%= restaurant.oddeat_diet_type %></td>
         <td><%= link_to 'Show', restaurant %></td>
+        <% if session[:login] == 1 %> 
         <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
         <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +37,6 @@
 
 <br>
 
+<% if session[:login] == 1 %> 
 <%= link_to 'New Restaurant', new_restaurant_path %>
+<% end %>

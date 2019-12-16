@@ -11,7 +11,7 @@
     <!-- Milligram CSS minified -->
     <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <!--font awesome-->
-    <script src="https://kit.fontawesome.com/6eba2fe580.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/6eba2fe580.js" crossorigin="anonymous"></script>-->
     <!--google font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
   </head>
@@ -34,6 +34,9 @@
                 <%=link_to "Vouchers", vouchers_path, { :class=>"nav-link header__link" } %>
               </li>
               <li class="nav-item">
+                <%=link_to "Restaurants", restaurants_path, { :class=>"nav-link header__link" }%>
+              </li>  
+              <li class="nav-item">
                 <%=link_to "HotSpots", hotspots_path, { :class=>"nav-link header__link" } %>
               </li>
               <li class="nav-item">
@@ -42,13 +45,6 @@
               <li class="nav-item">
                 <%=link_to "Contact", contact_path, { :class=>"nav-link header__link" }%>
               </li>  
-              <li class="nav-item">
-                <%=link_to "Restaurants", restaurants_path, { :class=>"nav-link header__link" }%>
-              </li>  
-              <li>
-                <%= link_to "View Orders", orders_path, { :class=>"nav-link header__link" } %>
-              </li>  
-                </li>
             </div>
             
             <div class="header__navbar-right">
@@ -56,20 +52,17 @@
                 <li class="nav-item">
                    <%= link_to "View Cart", "/cart", { :class=>"nav-link" }%>
                 </li>
+                <li>
+                  <%= link_to "View Orders", orders_path, { :class=>"nav-link header__link" } %>
+                </li>  
               <% end %>
               <% if user_signed_in? %>
                 <li><a class="nav-link" href="#">Hi <%= current_user.email %></a></li>
                 <li><%= link_to 'Edit Profile', edit_user_registration_path, { :class=>"nav-link" } %></li>
-                <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete  %></li>
+                <li><%= link_to 'Sign out',  destroy_user_session_path, :method => :delete, :class=>"nav-link"  %></li>
               <% else %>
                 <li><%= link_to 'Register', new_user_registration_path, { :class=>"nav-link" } %></li> 
                 <li><%= link_to 'Sign in', new_user_session_path, { :class=>"nav-link" } %></li>
-              <% end %>
-              
-              <% if session[:login] == 1 %> 
-                <li><%= link_to "Admin Logout", logout_path, { :class=>"nav-link" } %></li>
-              <% else %>
-                <li><%= link_to "Admin Login", login_path, { :class=>"nav-link" } %></li>
               <% end %>
             </div>
 
@@ -114,19 +107,17 @@
                 </li>
               <% end %>
               <% if user_signed_in? %>
-                <li><a class="nav-link" href="#">Hi <%= current_user.email %></a></li>
                 <li><%= link_to 'Edit Profile', edit_user_registration_path, { :class=>"nav-link" } %></li>
-                <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete  %></li>
+                <li><%= link_to 'Sign out', destroy_user_session_path, :class=>"nav-link", :method => :delete  %></li>
               <% else %>
                 <li><%= link_to 'Register', new_user_registration_path, { :class=>"nav-link" } %></li> 
                 <li><%= link_to 'Sign in', new_user_session_path, { :class=>"nav-link" } %></li>
               <% end %>
               
-              <% if session[:login] == 1 %> 
                 <li><%= link_to "Admin Logout", logout_path, { :class=>"nav-link" } %></li>
-              <% else %>
+           
                 <li><%= link_to "Admin Login", login_path, { :class=>"nav-link" } %></li>
-              <% end %>
+           
             </ul>
           </div>
           <div class="col-12 col-lg-3">

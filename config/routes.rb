@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'orderitems/show'
 
-  get 'orderitems/new'
+  get 'orderitems/new'  
 
   get 'orderitems/edit'
 

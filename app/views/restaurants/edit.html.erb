@@ -1,6 +1,15 @@
+<% provide(:title, "Editing Restaurant") %>
 <h1>Editing Restaurant</h1>
 
-<%= render 'form', restaurant: @restaurant %>
+
+    <%= form_for(restaurant, as: restaurant_name, url: restaurant_path(restaurant_name), html: { method: :put }) do |f| %>
+        <%= render 'form', restaurant: @restaurant %>
+    
+    
+        <%= f.label :image %><br />
+        <%= f.image_field :image, autofocus: true %>
+        
+    <% end %>
 
 <%= link_to 'Show', @restaurant %> |
 <%= link_to 'Back', restaurants_path %>

@@ -41,7 +41,9 @@
             </tbody>
           </table>
         <br>
-      <%= link_to 'New Voucher', new_voucher_path %>
+      <% if session[:login] == 1 %> 
+        <%= link_to 'New Voucher', new_voucher_path %>
+      <% end %>
     </div>
   </div>
 </div>
