@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 # something 
 gem 'railties', '5.0.7.2' 
 # Devise
-gem 'devise', '4.6.0'
+gem 'devise', '4.7.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
